@@ -19,4 +19,4 @@
 }
 ```
 - dialect change according your RDBMS type.
-- After adding your db config as listed above, go to the src folder from your terminal and execute `npx sequelize db:create`
+- After adding your db config as listed above, go to the src folder from your terminal and execute `npx sequelize db:create` 
