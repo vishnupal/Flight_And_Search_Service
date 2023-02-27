@@ -6,7 +6,7 @@ const router = express.Router();
 router.post('/', FlightController.create);
 // router.delete('/:id', CityController.destroy);
 // router.get('/:id', CityController.get);
-// router.get('/', CityController.getAll);
+router.get('/', FlightController.getAll);
 // router.patch('/:id', CityController.update);
 
 module.exports = router;
