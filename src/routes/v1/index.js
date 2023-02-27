@@ -1,11 +1,10 @@
-const CityController = require('../../controllers/city-controller');
 const express = require('express');
-
 const router = express.Router();
 
-router.post('/city', CityController.create);
-router.delete('/city/:id', CityController.destroy);
-router.get('/city/:id', CityController.get);
-router.get('/city', CityController.getAll);
-router.patch('/city/:id', CityController.update);
+const city = require('./city/index');
+const flights = require('./flights/index');
+
+router.use('/cities', city);
+router.use('/flights', flights);
+
 module.exports = router;
