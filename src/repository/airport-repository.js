@@ -9,7 +9,7 @@ class AirportRepository extends CrudRepository {
   // like
   // async getAll(filter) {
   //   try {
-  //     const result = await this.findAll({
+  //     const result = await this.model.findAll({
   //       where: {
   //         filter,
   //       },
