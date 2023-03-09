@@ -63,6 +63,20 @@ class FlightRepository {
       throw { error };
     }
   }
+
+  async update(flightId, data) {
+    try {
+      const response = await Flights.update(data, {
+        where: {
+          id: flightId,
+        },
+      });
+      return response;
+    } catch (error) {
+      console.log('Something went wrong in the repository layer');
+      throw { error };
+    }
+  }
 }
 
 module.exports = FlightRepository;
